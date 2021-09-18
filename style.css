@@ -1,0 +1,16 @@
+body {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  color : #0946E2;
+}
+
+.maj {
+  color : black;
+}
+
+.box {
+  background-color: #F9F9F9;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
