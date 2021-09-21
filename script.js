@@ -12,7 +12,7 @@ var boxhospital = document.querySelector('.boxhospital>span');
 var boxdate = document.querySelector('.maj>span');
 
 window.addEventListener('load',requete);
-
+/* requete pour récupérer les informations par rapport au covid-19 */
 function requete(evt) {
 	fetch("https://covid-19-data.p.rapidapi.com/country?name=france", {
 		"method": "GET",
@@ -45,7 +45,7 @@ function requete(evt) {
 }
 
 
-
+/* fonction pour mettre en forme la date du jour */
 function separerdate() {
 	var tab = date.split('-');
 	annee = tab[0];
