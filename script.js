@@ -13,8 +13,8 @@ var boxdate = document.querySelector('.maj>span');
 
 window.addEventListener('load',requete);
 /* requete pour récupérer les informations par rapport au covid-19 */
-function requete(evt) {
-	fetch("https://covid-19-data.p.rapidapi.com/country?name=france", {
+async function requete(evt) {
+	await fetch("https://covid-19-data.p.rapidapi.com/country?name=france", {
 		"method": "GET",
 		"headers": {
 			"x-rapidapi-host": "covid-19-data.p.rapidapi.com",
